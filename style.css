@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .coisas{
+    display: flex;
+    align-items: center;
+  }
+
+  .coisas img{
+    margin-right: 40px;
+  }
+  
+  header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #007BFF;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projeto {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .projeto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+  
