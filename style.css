@@ -52,6 +52,7 @@
   }
   
   nav a {
+    position: relative;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -59,9 +60,25 @@
     transition: color 0.3s;
   }
   
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007BFF;
+    transition: width 0.3s ease;
+  }
+  
   nav a:hover {
     color: #007BFF;
   }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
   
   main {
     max-width: 800px;
@@ -71,7 +88,9 @@
   
   section {
     margin-bottom: 3rem;
+    scroll-margin-top: 190px; /* altura aproximada do header */
   }
+  
   
   section h2 {
     font-size: 1.5rem;
@@ -92,11 +111,36 @@
     text-decoration: none;
     color: #007BFF;
   }
+
+  #contato{
+    margin-top: 150px;
+  }
   
   footer {
     text-align: center;
     padding: 1rem;
     background-color: #222;
     color: #fff;
+    margin-top: 150px;
   }
+
+  /* Centralizar o conteúdo da card */
+.card-body {
+  text-align: center;
+}
+
+/* Efeito de zoom na imagem */
+.image-container {
+  overflow: hidden; /* Esconde a parte da imagem que sai do container */
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+  max-width: 100%; /* Garante que a imagem não ultrapasse os limites do container */
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05); /* A imagem cresce 5% ao passar o mouse */
+}
+
   
